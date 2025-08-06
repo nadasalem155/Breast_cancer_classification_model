@@ -3,8 +3,8 @@ import numpy as np
 import joblib
 
 # Load the model and scaler
-model = joblib.load("decision_tree_model.pkl")
-scaler = joblib.load("scaler.pkl")
+model = joblib.load(r"Breast_cancer1\decision_tree_model.pkl")
+scaler = joblib.load(r"Breast_cancer1\scaler.pkl")
 
 # Define the feature names
 feature_names = [
