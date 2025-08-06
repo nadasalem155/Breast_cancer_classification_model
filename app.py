@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+import pandas as pd
 import joblib
 
 # Load the model and scaler
@@ -22,15 +23,18 @@ for feature in feature_names:
     user_input.append(value)
 
 if st.button("Predict"):
-    # Prepare and scale input
-    input_array = np.array(user_input).reshape(1, -1)
-    scaled_input = scaler.transform(input_array)
+    # Prepare input as DataFrame with correct column names
+    input_df = pd.DataFrame([user_input], columns=feature_names)
+
+    # Scale the input
+    scaled_input = scaler.transform(input_df)
+    scaled_df = pd.DataFrame(scaled_input, columns=feature_names)
 
     # Predict
-    prediction = model.predict(scaled_input)[0]
+    prediction = model.predict(scaled_df)[0]
 
     # Show result
     if prediction == 1:
-        st.success("🔬 The tumor is *Malignant*.")
+        st.success("🔬 The tumor is Malignant.")
     else:
-        st.info("🩺 The tumor is *Benign *.")
+        st.info("🩺 The tumor is Benign.")
