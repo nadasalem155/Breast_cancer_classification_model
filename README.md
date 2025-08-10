@@ -69,7 +69,3 @@ For a detailed explanation of the analysis, preprocessing, modeling, and results
 ---
 
 💡 **Note:** The `diagnosis` target variable is categorical, encoded as 1 for malignant and 0 for benign tumors.
-
----
-
-If you have any questions or feedback, feel free to reach out!
