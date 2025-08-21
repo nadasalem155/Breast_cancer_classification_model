@@ -1,4 +1,4 @@
-# 🧠🔬 Breast Cancer Classification Project
+# 🔬 Breast Cancer Classification Project
 
 This project implements a **breast cancer classification model** using **Decision Tree** 🌳 and **Logistic Regression** 📊 classifiers.  
 It predicts whether a tumor is **malignant** or **benign** based on key medical features extracted from cell nuclei.  
