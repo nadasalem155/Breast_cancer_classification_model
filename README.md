@@ -64,7 +64,7 @@ This project implements a breast cancer classification model using Decision Tree
 
 ## Project Report
 
-For a detailed explanation of the analysis, preprocessing, modeling, and results, see the [Full Project Report](https://github.com/nadasalem155/Breast_cancer_classification_model/blob/main/project_report.pdf) 
+For a detailed explanation of the analysis, preprocessing, modeling, and results, see the [Full Project presentation](project_presentation.pdf) 
 
 ---
 
